@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keylogger Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Keylogger Simulation</h1>
+
+<p>Type below to see how keystrokes are captured:</p>
+
+<input type="text" id="inputBox" placeholder="Start typing...">
+
+<h3>Captured Keystrokes:</h3>
+<div class="result-box" id="output"></div>
+
+<script>
+    const input = document.getElementById("inputBox");
+    const output = document.getElementById("output");
+
+    input.addEventListener("keyup", function() {
+        output.textContent = input.value;
+    });
+</script>
+
+<br>
+<a href="/" class="card">Back to Dashboard</a>
+
+</body>
+</html>

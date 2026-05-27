@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Caesar Cipher Tool</h1>
+
+<form method="POST">
+    <input type="text" name="text" placeholder="Enter text" required>
+    <input type="number" name="shift" placeholder="Shift value" required>
+
+    <br><br>
+
+    <button name="action" value="encrypt">Encrypt</button>
+    <button name="action" value="decrypt">Decrypt</button>
+</form>
+
+{% if result %}
+    <div class="result-box">
+        <h3>Result: {{ result }}</h3>
+    </div>
+{% endif %}
+
+<br>
+<a href="/">Back to Dashboard</a>
+
+</body>
+</html>

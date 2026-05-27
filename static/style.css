@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a; /* deep black */
+    color: #f5f5dc; /* beige text */
+    text-align: center;
+    padding: 40px;
+}
+
+/* Title */
+h1 {
+    color: #ff2e2e; /* red */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Remove bullets */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Spacing */
+li {
+    margin: 20px 0;
+}
+
+/* Buttons (links) */
+a {
+    text-decoration: none;
+    font-size: 18px;
+    background: #1a1a1a;
+    color: #f5f5dc;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: 1px solid #ff2e2e;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+    background: #ff2e2e;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Input field */
+input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ff2e2e;
+    background: #111;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #ff2e2e;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff0000;
+}
+
+/* Results box */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #ff2e2e;
+    border-radius: 8px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #ff2e2e;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #f5f5dc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #ff2e2e;
+    color: black;
+    transform: scale(1.05);
+}
